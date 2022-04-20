@@ -202,3 +202,5 @@ networks:
 Based off cheatsheet from <https://devhints.io/docker-compose>.
 
 
+https://app.circleci.com/pipelines/github/a4abi
+https://hub.docker.com/repository/registry-1.docker.io/a4abi/dockerapp/
