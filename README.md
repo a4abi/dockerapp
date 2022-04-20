@@ -2,27 +2,7 @@
 
 source: https://jonlabelle.com/snippets/view/markdown/docker-compose-cheatsheet
 
-## Basic config example
-
-```yml
-# docker-compose.yml
-version: '3'
-
-services:
-  web:
-    build: .
-    # build from Dockerfile
-    context: ./Path
-    dockerfile: Dockerfile
-    ports:
-     - "5000:5000"
-    volumes:
-     - .:/code
-  redis:
-    image: redis
-```
-
-## Common commands
+## Docker-compose Common commands
 
 ```bash
 # Starts existing containers for a service.
@@ -42,9 +22,30 @@ docker-compose ps
 
 # Builds, (re)creates, starts, and attaches to containers for a service.
 docker-compose up
+docker-compose up -d
 
 # Stops containers and removes containers, networks, volumes, and images created by up.
 docker-compose down
+```
+
+## Basic config example
+
+```yml
+# docker-compose.yml
+version: '3'
+
+services:
+  web:
+    build: .
+    # build from Dockerfile
+    context: ./Path
+    dockerfile: Dockerfile
+    ports:
+     - "5000:5000"
+    volumes:
+     - .:/code
+  redis:
+    image: redis
 ```
 
 ## Config file reference
@@ -201,6 +202,11 @@ networks:
 
 Based off cheatsheet from <https://devhints.io/docker-compose>.
 
+## Integrated BUILD and DEPLOY links
 
+
+CircleCI =
 https://app.circleci.com/pipelines/github/a4abi
+
+DockerHub =
 https://hub.docker.com/repository/registry-1.docker.io/a4abi/dockerapp/
