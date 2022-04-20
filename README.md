@@ -1,3 +1,5 @@
+![dockercheatsheet](https://user-images.githubusercontent.com/57506512/164302393-0b6a5e1e-02fb-49b7-b874-6f01049b1ee2.png)
+
 ---
 title: Docker Compose Cheatsheet
 subtitle: Quick reference for Docker Compose commands and config files
@@ -202,3 +204,5 @@ networks:
 ## References
 
 Based off cheatsheet from <https://devhints.io/docker-compose>.
+
+
